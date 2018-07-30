@@ -2,7 +2,7 @@
 
 \title{DevOps Engineer}
 
-\usepackage{bastelfreak}
+\usepackage{shibumi}
 
 \input{content.tex}
 
@@ -10,125 +10,139 @@
 
 \section{Fähigkeiten}
 
-\subsection{Kernfähigkeiten}
-\cvcomputer{Entwicklung}{Puppet\maintainer, installimage\maintainer}
-           {Operativer Bereich}{Archlinux\contributor, Gentoo, QEMU/KVM}
-
 \subsection{Entwicklung}
-\cvcomputer{Sprachen}{C\#, Python, Shell/Bash, Ruby}
-           {Frameworks}{RSpec, Beaker, Sinatra, Rails}
-\cvcomputer{Datenbanken}{MySQL, PostgreSQL}
-           {Methoden}{Objektorientierte Programmierung, MVC, Unit Tests, UML}
-\cvcomputer{Source Management}{Git, SVN}
-           {Werkzeuge}{Bitbucket, GitHub, Travis CI, Jenkins}
+\cvcomputer{Sprachen}{C, C++, Python, Golang, Shell/Bash, x86 Assembler, Java}
+           {Frameworks}{}
+ \cvcomputer{Werkzeuge}{GitLab, GitHub, Travis CI, Git, SVN, Jetbrains IDEs, Vim, Hashicorp Vagrant, SonarQube, Gradle, UML}
+           {Methoden}{Scrum, V-Modell XT, Agile, Test-Driven-Development, User-Experience (UX), Design-Patterns, Kanban, Requirements-Engineering}
 
 \subsection{System- und Netzwerk-Administration}
-\cvcomputer{Web}{Apache, Lighttpd, Nginx, Varnish, Squid, proftpd, HAProxy}
-           {Monitoring}{ELK-Stack, Zabbix, Munin, Prometheus, Graphite, Grafana, Graylog, Collectd}
-\cvcomputer{Mail}{Postfix, Dovecot, Amavis}
-           {Backup}{Duply, Borg}
-\cvcomputer{Installation / Deployment}{Bootstrapping, Kickstart, Puppet\maintainer, installimage\maintainer}
-           {Infrastruktur Software}{ISC-DHCPd, OpenVPN, hpa-tftpd, NFS, Marmoset, OpenLDAP}
-\cvcomputer{\kern-3ex Betriebssysteme}{GNU/Linux (Debian, Ubuntu, RedHat, Archlinux\contributor, Gentoo),
-                               FreeBSD, pfSense}
-           {Datenbanken}{MySQL, PostgreSQL}
-\cvcomputer{\kern-1em Virtualisierung}{VMWare, Docker, QEMU/KVM, libvirt, Parallels Cloud Server}
-           {Security}{SSL, PGP/GnuPG, OpenSSH, SELinux, Threat Modeling, Server hardening}
-\cvcomputer{DNS}{Unbound, Bind, Dnsmasq, PowerDNS}
-           {Netzwerk}{Cisco Routing und Switching, VLANs, Netzwerkdesign, IPv6, Netzwerksicherheit}
+\cvcomputer{Web}{Apache, Lighttpd, Nginx}
+           {Monitoring}{NSCA, NRPE, SNMP, Icinga, Nagios, Centreon, Prometheus, Grafana}
+\cvcomputer{Mail}{Postfix}
+           {Backup}{Borg, Rsync}
+\cvcomputer{Automatisierung}{Ansible, Hashicorp Packer, NAPALM}
+           {DNS}{DNSMasq}
+\cvcomputer{\kern-3ex Betriebssysteme}{GNU/Linux (Debian, Ubuntu, CentOS, Archlinux\maintainer)}
+           {Datenbanken}{MySQL, MariaDB, SQLite}
+\cvcomputer{\kern-1em Virtualisierung}{VMWare, QEMU/KVM, libvirt, Virtualbox}
+           {Paketbau}{pkg.tar.xz, RPM, Deb}
+\cvcomputer{Container}{Docker, Systemd-Nspawn}
+           {Netzwerk}{EVPN-BGP, VXLAN, IP Fabrics, NextGen Firewalls, TCP/IP, UDP/IP, ARP, HTTP}
+\cvcomputer{Init-Systeme}{SysVinit, Systemd}
+           {Storage}{NFSv4, CIFS}
+\cvcomputer{Firewalls}{Forcepoint NGFW, Iptables, Firewalld}
+           {Linux}{PAM, CGroups, Kernel, Polkit, DBus}
+\cvcomputer{VPN}{OpenVPN, Wireguard}
+           {Infrastruktur}{LDAP, DNS}
+
+\subsection{IT-Sicherheit}
+\cvcomputer{Forensik}{Photorec}
+           {Malware Analyse}{Yara, GDB, strace, radare2, IDA Pro}
+\cvcomputer{Offensive}{Blackbox/Whitebox-Tests, Exploits, Fuzzing, Informationsgewinnung}
+           {Defensive}{Linux-Hardening (CGroups, Namespaces, Selinux),
+           Verschlüsselung (dm-crypt, LUKS, OpenSSL, OpenSSH), Honeypots
+           (Kippo, cowrie), Port-Knocking, Anonymisierung, Obfuscation}
+
 \devnotes{Maintainer}{Contributor}
 
 \newpage
 
 \section{Erfahrung}
 
-\tlcventry{2014}{0}{DevOps Engineer}{\href{https://www.heg.com/}{Hosteurope GmbH} später GoGaddy EMEA}{Köln}{}%
-  {DevOps Engineer, System Administrator
+\tlcventry{2016}{0}{Hilfswissenschaftler}{\href{https://rz.tu-clausthal.de}{Rechenzentrum, TU Clausthal}}{Clausthal-Zellerfeld, Niedersachsen}{}{Systems und Network Engineer
 \begin{itemize}
-  \item DevOps Engineer:
+  \item Systems Engineer:
     \begin{itemize}
-      \item Betrieb von über 2600, mit Puppet administrierten, Servern;
-      \item Architektur für einen ELK-Stack mit Graylog entwickelt und umgesetzt;
-      \item Migration der gesammten Umgebung von Puppet 3 -> Puppet 4 -> Puppet 5  geplant und durchgeführt;
-      \item Entwicklung und Erweiterung von über 100 Puppet Modulen (fast alle FOSS), inklusive Plugins, Unit- und Acceptance-Tests;
-      \item Design und Entwicklung einer Fabric zur Firmen-unabhängigen Provisionierung physischer Server;
-      \item Erstellung von Paketen diverser Software für Archlinux, Betrieb und Entwicklung eines automatischen Buildsystems mit eigenen Repositories;
-      \item Product Owner für mehrere Infrastruktur Dienste.
+      \item Monitoring mit Centreon;
+      \item NFSv4 mit Kerberos Proof of Concept;
+      \item Systemadministration (CentOS, Ubuntu);
+      \item Configuration Management (Ansible, OPSI);
+      \item Package Management (RPM, DEB);
+      \item Migration eines Libvirt Clusters zu Proxmox;
+      \item Automatisierung von VMware Proof of Concept;
+      \item Betrieb einer OpenVAS Instanz;
+      \item Security Engineering.
     \end{itemize}
-  \item System Administrator:
+  \item Network Engineer:
     \begin{itemize}
-      \item Betrieb mehrerer Cloud-Platformen mit mehr als 3300 Hostsystemen, Third-Level-Support;
-      \item Test und Evaluierung neuer Hardware bezüglich des Stromverbrauchs, Effizienz und der Packungsdichte der VMs;
-      \item Optimierung des Hardware Monitorings um Festplatten Ausfällen vorzubeugen;
-      \item Automatisierung und Optimierung der Konsolidierung alter Platformen;
-      \item Entwicklung eines skalierbaren Monitoring Systems mit Autodiscovery auf Basis von Zabbix.
+      \item Entwicklung diverser Automatisierungswerkzeuge für die Forcepoint NGFW mit Python;
+      \item EVPN-BGP Proof of Concept und dessen Automatisierung mit Ansible;
+      \item Automatisierung von Switches mit Ansible-NAPALM;
+      \item Entwicklung einer Automatisierungslösung für Deep Packet Inspection für die Forcepoint NGFW mit Python.
     \end{itemize}
 \end{itemize}}
 
-\tlcventry{2012}{2014}{Systems Engineer}{\href{https://hetzner.de/}{Hetzner Online AG}}{Falkenstein}{}{Verantwortlich für eine Cloud-Platform, Verwaltung von Services zum Betrieb eines Rechenzentrums
+\tlcventry{2016}{2017}{Hilfswissenschaftler}{\href{https://www.in.tu-clausthal.de}{Institut für Informatik, TU Clausthal}}{Clausthal-Zellerfeld, Niedersachsen}{}{Software Engineer
 \begin{tightitemize}
-  \item Neuentwicklung einer Puppet Infrastruktur für über 1500 Server;
- \item Migration von Puppet 2.6 und 2.7 auf Puppet 3.2, kontinuierliche Updates auf Puppet 3.7;
- \item Implementierung von Cgroups zur Ressourcenverwaltung in einer Cloud Umgebung;
- \item Betrieb der Basisinfrastruktur eines Rechenzentrums für über 200.000 Server, unter anderem autoritative und rekursive DNS-Cluster, PXE-Installationsumgebung, Paketmirror, DHCP- und NFS-Cluster;
- \item Verwaltung, Entwicklung und Optimierung der vorhandenen Cloud-Platform mit über 20.000 virtuellen Instanzen;
- \item Planung und Evaluierung einer neuen Cloud-Platform mit verteiltem und lokalem Storage;
- \item Third-Level-Support Für die Cloud-Platform sowie Rechenzentrums-Infrastruktur;
- \item Monitoring aller Services mit Zabbix;
- \item Erstellung technischer Dokumentation.
+ \item Versionskontrolle mit SVN;
+ \item Software-Architektur;
+ \item Software-Entwickung in Java;
+ \item Build-Management mit Gradle;
+ \item FMI (Functional Mockup Interface);
+ \item Matlab Simulink Compiler;
+ \item Continuous Code Quality mit Sonarqube.
 \end{tightitemize}}
 
-\tlcventry{2016}{0}{Vox Pupuli Project Management Committee}{\href{https://voxpupuli.org/}{Vox Pupuli}}{Internet}{}{Community Management, Repräsentant
+\tlcventry{2014}{2017}{Hilfswissenschaftler}{\href{https://math.tu-clausthal.de}{Institut für Mathematik, TU Clausthal}}{Clausthal-Zellerfeld, Niedersachsen}{}{System Administrator
 \begin{tightitemize}
-  \item Einarbeitung neuer Community Mitglieder;
-  \item Verwaltung und Updates von Abhängigkeiten in verschiedenen Versionen;
-  \item Vertretung der Community auf Veranstaltungen und Konferenzen;
-  \item Eskalation von Bugs und Featurerequests der Community an die Firma Puppet Inc.
+  \item Systemadministration (Windows, GNU/Linux);
+  \item Identity and Access Management (LDAP, PAM, Kerberos);
+  \item Monitoring (NRPE, NSCA, SNMP);
+  \item Package Management (RPM, DEB);
+  \item Bash-Scripting;
+  \item Printserver (CUPS);
+  \item Webserver (Apache);
+  \item Network-Storage (NFSv4, Firefox-Sync-Server);
+  \item Datenbanken (MySQL);
+  \item Configuration Management (OPSI).
 \end{tightitemize}}
 
-\tlcventry{2015}{0}{Puppet Contributor}{\href{https://puppet.com/}{Puppet Inc}}{Internet}{}{Entwickler
+\tlcventry{2017}{0}{Trusted User}{\href{https://archlinux.org}{Arch Linux}}{Internet}{}{Package Maintainer
 \begin{tightitemize}
- \item Review und Bearbeitung eingehender Patches;
- \item Umgang mit (Security-) Issues, Bugs und Feature Requests in über 90 Puppet Modulen;
- \item Migration öffentlicher Module von Puppet 3 nach 4, später 5;
+  \item Pflege von Linux Paketen für die Distribution \href{https://archlinux.org}{Arch Linux};
+  \item Härten von Paketen;
+  \item Einpflegen von Patches;
+  \item Entwicklung einer Umgebung für automatisierte Vagrant Image Releases: \href{https://github.com/archlinux/arch-boxes}{https://github.com/archlinux/arch-boxes}.
 \end{tightitemize}}
 
-\tlcventry{2015}{0}{Developer and Maintainer}{\href{https://github.com/virtapi/virtapi}{VirtAPI-Stack}}{Internet}{}{Software Architekt und Entwickler
+\tlcventry{2015}{0}{Security Team Mitglied}{\href{https://archlinux.org}{Arch Linux}}{Internet}{}{Security Engineer
 \begin{tightitemize}
-  \item Entwurf und Dokumentation einer API zur Verwaltung einer Cloud-Platform;
-  \item Verwaltung des installimages;
-  \item Erstellung eines Live Linux Systems für Rescue Operationen (\href{https://github.com/virtapi/LARS}{LARS});
-  \item Pflege einer API zur Verwaltung von PXE, DHCP, LDAP, installimage Daten (\href{https://github.com/virtapi/marmoset}{marmoset}).
+  \item CVE-Monitoring;
+  \item Härten von Paketen;
+  \item Schreiben von Security Patches.
 \end{tightitemize}}
 
 \section{Ausbildung}
 
-\tllabelcventry{2014}{2018}{\kern-2em 2014--2018}{Weiterbildung zum staatlich geprüfter Informatiker}{\href{http://www.hhek.bonn.de/front_content.php?idcat=120}{Heinrich-Hertz-Europakolleg der Bundesstadt Bonn}}{}{}{}
+\tlcventry{2013}{0}{Studium der Informatik (Bachelor)}{TU Clausthal, Niedersachsen}{}{}{}{}
 
-\tllabelcventry{2009}{2012}{2009--2012}{Ausbildung zum Fachinformatiker Systemintegration}{}{Polizei NRW}{}{}{}
+\tllabelcventry{2004}{20013}{2004--2013}{Abitur}{}{Robert-Koch-Gymnasium. Clausthal-Zellerfeld, Niedersachsen}{}{}{}
 
-\tllabelcventry{2003}{2009}{2003--2009}{Realschulabschluss}{}{Realschule Heessen}{}{}{}
+\section{Ehrenamt}
 
-\section{Zertifizierung}
-
-\tldatecventry{2017}{Cisco Certified Network Associate}{\href{https://www.cisco.com/c/en/us/training-events/training-certifications/certifications/associate/ccna-routing-switching.html}{Cisco Inc}}{}{}{}
-
-\tldatecventry{2017}{ITIL{\textregistered} v3 Foundation Examination}{\href{https://www.axelos.com/best-practice-solutions/itil}{AXELOS Limited}}{}{}{}
-
-\tldatecventry{2013}{Puppet Fundamentals Administrator}{\href{https://puppet.com/support-services/training}{Puppet Inc}}{}{}{Puppet IT automation software}
+\tlcventry{2006}{2013}{Freiwillige Feuerwehr}{Hahnenklee-Bockswiese, Niedersachsen}{}{}{}{%
+\begin{tightitemize}
+   \item Erreichen des Dienstgrads Hauptfeuerwehrmann;
+   \item Bestehen des Lehrgangs Atemschutzgeräteträger;
+   \item Bestehen des Lehrgangs Sprechfunker;
+   \item Bestehen des Grundlehrgangs;
+   \item Ehrenamtliche Tätigkeit als Atemschutzgerätewart;
+\end{tightitemize}}
 
 \section{Veröffentlichungen}
 
-\tldatecventry{2017}{Datawarehousing for Cloud Computing Metrics}{\href{https://bastelfreak.de/thesis-de.pdf}{https://bastelfreak.de/thesis-de.pdf}}{}{}{Analyse von Softwarekomponenten zur Messung von Cloud Metriken nach dem Datawarehouse Prinzip}{}
+\tldatecventry{2018}{Seminararbeit über OpenStack}{\href{https://github.com/shibumi/openstack-project-paper/blob/master/seminararbeit.pdf}{https://github.com/shibumi/openstack-project-paper/blob/master/seminararbeit.pdf}}{}{}{}{}
 
-\tllabelcventry{2015}{2017}{\kern-2em 2015--2017}{Network Design Principles}{\href{https://github.com/bastelfreak/talks}{https://github.com/bastelfreak/talks}}{}{}{Leitung mehrerer Unterrichtsstunden über Netzwerkdesign in Rechenzentren, inklusive Routing, Switching, Netzwerksicherheit und IPv6}
+\tldatecventry{2017}{Seminararbeit über Amazon AWS EC2 VMs und Container}{\href{https://github.com/shibumi/aws-ec2-project-paper/releases/download/final-release/essay.pdf}{https://github.com/shibumi/aws-ec2-project-paper/releases/download/final-release/essay.pdf}}{}{}{}{Automatisierung des Builds der LaTeX basierenden Seminararbeit mit Travis CI}
 
-\tldatecventry{2015}{VirtAPI Paper}{\href{https://bastelfreak.de/virtapi.pdf}{https://bastelfreak.de/virtapi.pdf}}{}{}{Studienarbeit über eine API für eine Cloud-Platform}{}
-
-\tldatecventry{2012}{Entwicklung einer Testumgebung für Systemupdates}{\href{https://bastelfreak.de/doku.pdf}{https://bastelfreak.de/doku.pdf}}{}{}{Aufbau eines Qemu Hypervisors mit Archipel auf einer Gentoo Platform}{}
+\tldatecventry{2015}{Network Security Vorlesung Projektpapier: Tor}{\href{https://github.com/shibumi/Tor-project-paper/blob/master/tor.pdf}{https://github.com/shibumi/Tor-project-paper/blob/master/tor.pdf}}{}{}{}{}
 
 \section{Fremdsprachen}
 
-\cvlanguage{Englisch}{Fließend}{Tägliche Nutzung, Vorträge auf Englisch}
+\cvlanguage{Englisch}{Fließend}{Tägliche Nutzung}
+\cvlanguage{Russisch}{Grundkenntnisse}{4 Jahre Schule}
+\cvlanguage{Japanisch}{Grundkenntnisse}{Freizeitbeschäftigung}
+\cvlanguage{Chinesisch}{Grundkenntnisse}{Freizeitbeschäftigung}
 
 \end{document}
