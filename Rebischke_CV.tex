@@ -39,7 +39,7 @@
 
 % Print the content
 \begin{cvsection}{Employment}
-\begin{cvsubsection}{Student Asisstant}{TU Clausthal, Datacenter}{Apr 2016}
+\begin{cvsubsection}{Student Asisstant}{TU Clausthal, Datacenter}{Apr 2016 -- April 2020}
 
 \begin{itemize}
 \item I created knowledge via building a proof of concept for deploying Virtual Tunnel End Points (VTEPs) with Ansible on Linux machines for EVPN BGP/VXLAN.
@@ -48,8 +48,9 @@
 \item I reduced MTTR from one work day to one hour with automating a Freeradius/Radsecproxy/MySQL based AAA infrastructure with Ansible.
 \item I increased virtual machine reliability via creating and maintaining a Proxmox VE cluster consisting of 25 machines.
 \item I reduced toil from multiple hours to an automated system with writing a Python client for deploying TLS certificates and private keys on a Forcepoint NGFW for TLS inspection.
-\item I reduced toil and increased security via implementing a Kubernetes Cluster with micro segmentation between different applications.
-\item Additional tasks were monitoring (NSCA, NRPE, SNMP), webserver (Nginx, Apache), network Automation (NAPALM, Ansible), storage (NFSv4 over Kerberos), log and netflow gathering (Elasticsearch, Logstash, Kibana) and Configuration Management (Ansible).
+\item My current job also involves evaluating Kubernetes for increasing reliability and introducing micro segmentation via namespace segregation and implementing my bachelor thesis project on-premise with new additions (Traefik as reverse proxy and load balancer for Prometheus and Grafana).
+\item Additional tasks were/are monitoring (NSCA, NRPE, SNMP), webserver (Nginx, Apache), network Automation (NAPALM, Ansible), storage (NFSv4 over Kerberos), log and netflow gathering (Elasticsearch, Logstash, Kibana) and Configuration Management (Ansible).
+\item I gave a talk about Freeradius and Radsecproxy deployment via Ansible on the DFN-BT (annual German Research Network Meetup): \url{https://www.dfn.de/fileadmin/3Beratung/Betriebstagungen/bt70/BT70_MobileIT_Konfiguration_FreeRADIUS_und_radsecproxy_mit_Ansible_Strauf_Rebischke.pdf}
 \end{itemize}
 \end{cvsubsection}
 
@@ -85,7 +86,8 @@
 \item Bachelor defense: Evaluation of a distributed monitoring system for the TU Clausthal Campus (German) \url{https://github.com/shibumi/bachelor-kolloquium}
 \end{itemize}
 \end{cvsubsection}
-\begin{cvsubsection}{M.Sc. Computer Science}{Technical University Clausthal}{Oct 2018 -- Now}
+\begin{cvsubsection}{M.Sc. Computer Science}{Technical University Clausthal}{Oct 2018 -- Oct 2020}
+Right now I am working on the theoretical approach for micro service identification and characterization for service matching in the research project \textit{Basic technologies and engineering methods for emergent genesis and semantic composition of IoT ecosystems}. The research project will be finished in April 2020.
 \end{cvsubsection}
 
 \end{cvsection}
@@ -95,16 +97,19 @@
 \item \textbf{Security Advisories} Verifying known Common Vulnerabilities and Expores (CVEs) in Arch Linux packages.
 \item \textbf{Hardening} Improving Security of Arch Linux packages and infrastructure.
 \item \textbf{Package Maintaner} Building source code into Arch Linux binary packages for distribution, committing patches and supporting the community.
+\item \textbf{Release Engineering} Vagrant, qcow2 and Docker image builds for Arch Linux.
 \end{itemize}
 \end{cvsubsection}
 
 \begin{cvsubsection}{Projects}{\url{https://github.com/shibumi}}{}
+Here I list my projects, some of these projects are currently freezed due to a lack of free time besides university, job in the university datacenter and my Arch Linux contribution.
 \begin{itemize}
-\item \textbf{Arch Linux Boxes} Building reliable infrastructure for automated monthly Vagrant builds with Ansible and Hashicorp Packer.
-\item \textbf{nullday.de} My personal blog with a 100/100 TLS Rating \url{https://www.ssllabs.com/ssltest/analyze.html?d=nullday.de} and a 130/100 security rating according to \url{https://observatory.mozilla.org/analyze/nullday.de}.
-\item \textbf{ProcFS} Adding support for CIFS in the Prometheus Node Exporter component ProcFS.
+\item \textbf{Arch Linux Boxes} Building reliable infrastructure for automated monthly Vagrant and qcow2 image builds with Ansible and Hashicorp Packer. This project includes a small python script that reduces the toil to manually check for the monthly needed fresh Arch Linux ISO image. \url{https://github.com/archlinux/arch-boxes}
+\item \textbf{nullday.de} My personal blog with a 100/100 TLS Rating \url{https://www.ssllabs.com/ssltest/analyze.html?d=nullday.de} and a 130/100 security rating according to \url{https://observatory.mozilla.org/analyze/nullday.de} with a 100/100 Google PageSpeed Insights rating.
+\item \textbf{ProcFS} Adding support for CIFS in the Prometheus Node Exporter component ProcFS (This project is \textit{work in progress})
 \item \textbf{nspawn.org} A hub for systemd-nspawn container images and bootable GPT machine images available on \url{https://nspawn.org}
-\item \textbf{Fighting Malware} Participation in fighting global botnets and malware: \url{https://www.virusbulletin.com/uploads/pdf/conference_slides/2015/KalnaiHorejsi-VB2015.pdf}.
+\item \textbf{Fighting Malware} Participation in fighting global botnets and malware: \url{https://www.virusbulletin.com/uploads/pdf/conference_slides/2015/KalnaiHorejsi-VB2015.pdf}. I shared via SSH honepot gathered Linux/XOR.DDoS samples with security researchers: \url{https://blog.malwaremustdie.org/2014/09/mmd-0028-2014-fuzzy-reversing-new-china.html}
+\item \textbf{SRE-Cheatsheet} I am working on a small Site Reliability Engineering cheat sheet for beginning SREs: \url{https://github.com/shibumi/SRE-cheat-sheet} (This project is \textit{work in progress})
 \end{itemize}
 \end{cvsubsection}
 \end{cvsection}
@@ -112,8 +117,8 @@
 \begin{cvsection}{Languages, Additional Technologies and Interests}
 \begin{cvsubsection}{}{}{}
 \begin{itemize}
-\item \textbf{Languages} Python, Golang, Java, C, C++, Bash, x86 Assembly, German, English
-\item \textbf{Additional Technologies} Terraform, Puppet, Selinux, Systemd, IPtables, Restic, Yara, Radare2, LUKS, Vagrant, Hashicorp Packer and many more.
+\item \textbf{Natural Languages} German, English
+\item \textbf{Programming Languages} Bash, Python, C++, Golang, C, Java, x86 Assembly (sorted by skill level from left/expert to right/beginner)
 \item \textbf{Interests} Site-Reliability Engineering, Devops, Network Infrastructure, Reverse Engineering, Forensics, Penetration Testing, Red Team/Blue Team, Blackbox/Whitebox Testing, Malware, Server Hardening, Network Security.
 \end{itemize}
 \end{cvsubsection}
