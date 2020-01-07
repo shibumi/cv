@@ -26,6 +26,9 @@
 % For mathematical symbols
 \usepackage{amsmath}
 \usepackage{hyperref}
+\usepackage{endnotes}
+\renewcommand{\notesname}{}
+\renewcommand{\enoteheading}{}
 
 % Set applicant's personal data for header
 \name{Christian Rebischke}
@@ -39,77 +42,77 @@
 
 % Print the content
 \begin{cvsection}{Employment}
-\begin{cvsubsection}{Student Asisstant}{TU Clausthal, Datacenter}{Apr 2016 -- April 2020}
+\begin{cvsubsection}{Student Asisstant}{TU Clausthal, Datacenter}{Apr 2016 --- April 2020}
 
 \begin{itemize}
-\item I created knowledge via building a proof of concept for deploying Virtual Tunnel End Points (VTEPs) with Ansible on Linux machines for EVPN BGP/VXLAN.
-\item I reduced toil from multiple hours to an automated system with automating daily email based firewall IPS/IDS alerts via the Forcepoint NGFW Python API.
-\item I improved system security and reliability with setting up an OpenVAS vulnerability scanner.
-\item I reduced MTTR from one work day to one hour with automating a Freeradius/Radsecproxy/MySQL based AAA infrastructure with Ansible.
-\item I increased virtual machine reliability via creating and maintaining a Proxmox VE cluster consisting of 25 machines.
-\item I reduced toil from multiple hours to an automated system with writing a Python client for deploying TLS certificates and private keys on a Forcepoint NGFW for TLS inspection.
-\item My current job also involves evaluating Kubernetes for increasing reliability and introducing micro segmentation via namespace segregation and implementing my bachelor thesis project on-premise with new additions (Traefik as reverse proxy and load balancer for Prometheus and Grafana).
-\item Additional tasks were/are monitoring (NSCA, NRPE, SNMP), webserver (Nginx, Apache), network Automation (NAPALM, Ansible), storage (NFSv4 over Kerberos), log and netflow gathering (Elasticsearch, Logstash, Kibana) and Configuration Management (Ansible).
-\item I gave a talk about Freeradius and Radsecproxy deployment via Ansible on the DFN-BT (annual German Research Network Meetup): \url{https://www.dfn.de/fileadmin/3Beratung/Betriebstagungen/bt70/BT70_MobileIT_Konfiguration_FreeRADIUS_und_radsecproxy_mit_Ansible_Strauf_Rebischke.pdf}
+\item Built a proof of concept for deploying Virtual Tunnel End Points (VTEPs) with Ansible on Linux machines for EVPN BGP/VXLAN.
+\item Implemented an automated system in Python for fetching IPS firewall alerts via REST API and mailing them to responsible system administrators. This reduced the toil of writing 5--25 mails daily manually.
+\item Improved system security and reliability with setting up an OpenVAS vulnerability scanner.
+\item Reduced MTTR from one work day to one hour with automating a Freeradius/Radsecproxy/MySQL based AAA infrastructure with Ansible.
+\item Showed ownership with maintaning a Proxmox VE cluster consisting of 25 physical nodes.
+\item Designed and implemented a command line tool in Python for deploying TLS certificates and private keys on a central firewall for inbound TLS inspection.
+\item Evaluated Kubernetes for increasing reliability and introducing micro segmentation via namespace segregation
+\item Set up a distributed monitoring system with the help of Traefik, Prometheus and Grafana for monitoring Service Level Indicators (SLIs) for different institutions within the university campus.
+\item Gave a talk about Freeradius and Radsecproxy deployment via Ansible on the DFN-BT (annual German research network meetup): \endnote{\url{https://www.dfn.de/fileadmin/3Beratung/Betriebstagungen/bt70/BT70_MobileIT_Konfiguration_FreeRADIUS_und_radsecproxy_mit_Ansible_Strauf_Rebischke.pdf}}
+\item Achieved a relation of LDAP users and IP addresses for writing user/IP specific firewall rules via implementing a REST API as middleware between a proprietary service, Freeradius and OpenVPN.
+\item Additional key technologies being used: NSCA, NRPE, SNMP, Nginx, Apache, NAPALM, Ansible, NFSv4 over Kerberos, Elasticsearch, Logstash, Kibana, Ansible, REST APIs, Docker.
 \end{itemize}
 \end{cvsubsection}
 
-\begin{cvsubsection}{Student Assistant}{TU Clausthal Inst. of Software Systems Engineering}{Oct 2016 -- Sep 2017}
+\begin{cvsubsection}{Student Assistant}{TU Clausthal Inst.\@ of Software Systems Engineering}{Oct 2016 --- Sep 2017}
 \bigskip
 \begin{itemize}
-\item I build a tool chain for exporting Matlab Simulink models into the Functional Mockup Unit (FMU) format.
-\item I developed components for a model transformation tool suite in the project \emph{Spectral Analsysis of Software Architecture}
-\item I enhanced code quality with establishing the Continuous Code Quality tool Sonarqube.
-\item I used the following technologies for accomplishing these tasks: Java, Gradle, Matlab, SVN
+\item Build a tool chain for exporting Matlab Simulink models into the Functional Mockup Unit (FMU) format.
+\item Developed components for a model transformation tool suite in the project \emph{Spectral Analsysis of Software Architecture}
+\item Enhanced code quality with establishing the Continuous Code Quality tool Sonarqube.
+\item Key technologies being used: Java, Gradle, Matlab, SVN
 \end{itemize}
 \end{cvsubsection}
 
-\begin{cvsubsection}{Student Assistant}{TU Clausthal Inst. of Mathematics}{Apr 2014 -- Sep 2017}
+\begin{cvsubsection}{Student Assistant}{TU Clausthal Inst.\@ of Mathematics}{Apr 2014 --- Sep 2017}
 \bigskip
 \begin{itemize}
-\item I increased system reliability with monitoring via the Nagios fork Centreon and using the protocols NRPE, NSCA, SNMP.
-\item I reduced toil with building linux packages for Ubuntu and CentOS.
-\item I have administrated Linux and Windows machines and gave first level support.
-\item Furthermore I have wrote bash scripts, created a NFSv4 server with Kerberos, managed Apache webserver, CUPS printing server, a Firefox sync server for bookmarks and passwords, and a MySQL server.
+\item Increased system reliability with monitoring via the Nagios fork Centreon.
+\item Build software packages for Ubuntu (deb) and CentOS (rpm).
+\item Has been the system administrator for Linux and Windows machines and gave first level support.
+\item Technologies being used: Bash, NFSv4 with Kerberos, Apache, CUPS, MySQL.
 \end{itemize}
 \end{cvsubsection}
 
 \end{cvsection}
 
 \begin{cvsection}{Education}
-\begin{cvsubsection}{B.Sc. Computer Science}{Technical University Clausthal}{Oct 2013 -- May 2019}
+\begin{cvsubsection}{B.Sc. Computer Science}{Technical University Clausthal}{Oct 2013 --- May 2019}
 \begin{itemize}
-\item Seminar paper: Amazon AWS (EC2 virtual Server and EC2 container) (German) \url{https://github.com/shibumi/aws-ec2-project-paper}
-\item Seminar paper: Openstack (internal structure and overview) (German) \url{https://github.com/shibumi/openstack-project-paper}
-\item Seminar paper: Tor (a short introduction in The Onion Routing) (German) \url{https://github.com/shibumi/Tor-project-paper}
-\item Bachelor thesis: Evaluation of a distributed monitoring system for the TU Clausthal Campus (German) \url{https://github.com/shibumi/bachelor-thesis}
-\item Bachelor defense: Evaluation of a distributed monitoring system for the TU Clausthal Campus (German) \url{https://github.com/shibumi/bachelor-kolloquium}
+	\item Seminar paper: Amazon AWS (EC2 virtual Server and EC2 container) (German) \endnote{\url{https://github.com/shibumi/aws-ec2-project-paper}}
+	\item Seminar paper: Openstack (internal structure and overview) (German) \endnote{\url{https://github.com/shibumi/openstack-project-paper}}
+	\item Seminar paper: Tor (a short introduction in The Onion Routing) (German) \endnote{\url{https://github.com/shibumi/Tor-project-paper}}
+	\item Bachelor thesis: Evaluation of a distributed monitoring system for the TU Clausthal Campus (German) \endnote{\url{https://github.com/shibumi/bachelor-thesis}}\endnote{\url{https://github.com/shibumi/bachelor-kolloquium}}
 \end{itemize}
 \end{cvsubsection}
-\begin{cvsubsection}{M.Sc. Computer Science}{Technical University Clausthal}{Oct 2018 -- Oct 2020}
-Right now I am working on the theoretical approach for micro service identification and characterization for service matching in the research project \textit{Basic technologies and engineering methods for emergent genesis and semantic composition of IoT ecosystems}. The research project will be finished in April 2020.
+\begin{cvsubsection}{M.Sc. Computer Science}{Technical University Clausthal}{Oct 2018 --- Oct 2020}
+Current project is finding a theoretical approach for micro service identification and characterization for service matching via the Semantic Web and Ontologies in the research project \textit{Basic technologies and engineering methods for emergent genesis and semantic composition of IoT ecosystems}. The research project will be finished in April 2020.
 \end{cvsubsection}
 
 \end{cvsection}
-\begin{cvsection}{Open Source Contribution}
-\begin{cvsubsection}{Arch Linux}{\url{https://archlinux.org}}{Jan 2015 -- Now}
+\begin{cvsection}{Open Source Contributions}
+\begin{cvsubsection}{Arch Linux}{\url{https://archlinux.org}}{Jan 2015 --- Now}
 \begin{itemize}
-\item \textbf{Security Advisories} Verifying known Common Vulnerabilities and Expores (CVEs) in Arch Linux packages.
-\item \textbf{Hardening} Improving Security of Arch Linux packages and infrastructure.
+\item \textbf{Security Advisories} Verifying known Common Vulnerabilities and Exposures (CVEs) in Arch Linux packages.
+\item \textbf{Hardening} Improving security of Arch Linux packages and infrastructure.
 \item \textbf{Package Maintaner} Building source code into Arch Linux binary packages for distribution, committing patches and supporting the community.
 \item \textbf{Release Engineering} Vagrant, qcow2 and Docker image builds for Arch Linux.
 \end{itemize}
 \end{cvsubsection}
 
 \begin{cvsubsection}{Projects}{\url{https://github.com/shibumi}}{}
-Here I list my projects, some of these projects are currently freezed due to a lack of free time besides university, job in the university datacenter and my Arch Linux contribution.
 \begin{itemize}
-\item \textbf{Arch Linux Boxes} Building reliable infrastructure for automated monthly Vagrant and qcow2 image builds with Ansible and Hashicorp Packer. This project includes a small python script that reduces the toil to manually check for the monthly needed fresh Arch Linux ISO image. \url{https://github.com/archlinux/arch-boxes}
-\item \textbf{nullday.de} My personal blog with a 100/100 TLS Rating \url{https://www.ssllabs.com/ssltest/analyze.html?d=nullday.de} and a 130/100 security rating according to \url{https://observatory.mozilla.org/analyze/nullday.de} with a 100/100 Google PageSpeed Insights rating.
-\item \textbf{ProcFS} Adding support for CIFS in the Prometheus Node Exporter component ProcFS (This project is \textit{work in progress})
+\item \textbf{Arch Linux Boxes} Building reliable infrastructure for automated monthly Vagrant and qcow2 image builds with Ansible and Hashicorp Packer. This project includes a small python script that reduces the toil of 1 hour per month to manually check for the monthly needed fresh Arch Linux ISO image. \endnote{\url{https://github.com/archlinux/arch-boxes}}.
+\item \textbf{nullday.de} My personal blog with a 100/100 TLS rating \endnote{\url{https://www.ssllabs.com/ssltest/analyze.html?d=nullday.de}}, a 130/100 HTTP headers rating \endnote{\url{https://observatory.mozilla.org/analyze/nullday.de}} and a 100/100 Google PageSpeed Insights rating.
+\item \textbf{htpwd} A Go implementation of Apaches \textit{htpasswd}.\endnote{\url{https://github.com/shibumi/htpwd}}
+\item \textbf{ryoukai} My i3 statusbar written in Go.\endnote{\url{https://github.com/shibumi/ryoukai}}
 \item \textbf{nspawn.org} A hub for systemd-nspawn container images and bootable GPT machine images available on \url{https://nspawn.org}
-\item \textbf{Fighting Malware} Participation in fighting global botnets and malware: \url{https://www.virusbulletin.com/uploads/pdf/conference_slides/2015/KalnaiHorejsi-VB2015.pdf}. I shared via SSH honepot gathered Linux/XOR.DDoS samples with security researchers: \url{https://blog.malwaremustdie.org/2014/09/mmd-0028-2014-fuzzy-reversing-new-china.html}
-\item \textbf{SRE-Cheatsheet} I am working on a small Site Reliability Engineering cheat sheet for beginning SREs: \url{https://github.com/shibumi/SRE-cheat-sheet} (This project is \textit{work in progress})
+\item \textbf{SRE-Cheatsheet} I am working on a small Site Reliability Engineering cheat sheet for beginning SREs: \url{https://github.com/shibumi/SRE-cheat-sheet}
 \end{itemize}
 \end{cvsubsection}
 \end{cvsection}
@@ -118,10 +121,14 @@ Here I list my projects, some of these projects are currently freezed due to a l
 \begin{cvsubsection}{}{}{}
 \begin{itemize}
 \item \textbf{Natural Languages} German, English
-\item \textbf{Programming Languages} Bash, Python, C++, Golang, C, Java, x86 Assembly (sorted by skill level from left/expert to right/beginner)
-\item \textbf{Interests} Site-Reliability Engineering, Devops, Network Infrastructure, Reverse Engineering, Forensics, Penetration Testing, Red Team/Blue Team, Blackbox/Whitebox Testing, Malware, Server Hardening, Network Security.
+\item \textbf{Programming Languages} Bash, Python, Golang, C, C++, Java, x86 Assembly
+\item \textbf{Interests} Site-Reliability Engineering, Devops, Network Infrastructure, Reverse Engineering, Forensics, Penetration Testing, Red Team/Blue Team, Blackbox/Whitebox Testing, Malware Analysis, Server Hardening, Network Security.
 \end{itemize}
 \end{cvsubsection}
+\end{cvsection}
+
+\begin{cvsection}{Footnotes}
+\theendnotes
 \end{cvsection}
 
 \end{document}
