@@ -29,7 +29,7 @@
 
 % Set applicant's personal data for header
 \name{Christian Rebischke}
-\address{Marie-Hedwig-Straße 13 \linebreak Apartment 321 \linebreak Clausthal-Zellerfeld 38678}
+\address{Marie-Hedwig-Straße 13 \linebreak Apartment 321 \linebreak Clausthal-Zellerfeld 38678 \linebreak Germany}
 \contacts{+49 151 6190 2666 \linebreak chris@shibumi.dev \linebreak \url{https://shibumi.dev}}
 
 \begin{document}
@@ -38,21 +38,23 @@
 \makeheader
 
 \begin{cvsection}{Education}
-\begin{cvsubsection}{M.Sc. Computer Science}{Technical University Clausthal}{Oct 2018 --- Apr 2021}
+\begin{cvsubsection}{M.Sc.\@ in Computer Science}{Clausthal University of Technology}{Oct 2018 --- Apr 2021}
+\bigskip
 \begin{itemize}
-\item \textbf{Key Coursework}: Advanced Computer Networks, Cloud Computing, High-Performance Computing, High-Performance Computing with C++, Network Security
+\item \textbf{Key Coursework}: Advanced computer networks, cloud computing, high performance computing, high performance computing with C++, network security
 \end{itemize}
 \end{cvsubsection}
-\begin{cvsubsection}{B.Sc. Computer Science}{Technical University Clausthal}{Oct 2013 --- May 2019}
+\begin{cvsubsection}{B.Sc.\@ in Computer Science}{Clausthal University of Technology}{Oct 2013 --- May 2019}
+\bigskip
 \begin{itemize}
-\item \textbf{Key Coursework}: Algorithms and Datastructures, Computer Architecture, Computer Networks, Databases, Operating Systems and Distributed Systems, Software Engineering
+\item \textbf{Key Coursework}: Algorithms and data structures, computer architecture, computer networks, databases, operating systems and distributed systems, software engineering. GPA:\@ 2.6
 \end{itemize}
 \end{cvsubsection}
 
 \begin{cvsection}{Work Experience}
 \begin{cvsubsection}{Google Summer of Code}{in-toto, CNCF}{June 2020 --- Sep 2020}
 \begin{itemize}
-\item Ported runlib functionality from the in-toto reference implementation in Python to the in-toto implementation in Go by expanding the library wit code for signing and generating in-toto link metadata.
+\item Ported \textit{runlib} functionality from the \textit{in-toto} reference implementation in Python to the \textit{in-toto} implementation in Go by expanding the library with code for signing and generating \textit{in-toto} link metadata.
 \item Personal highlight: Found a bug in the crypto/rsa Go library and submit a PR to Gerrit.
 \end{itemize}
 \end{cvsubsection}
@@ -61,7 +63,7 @@
 \item Developed a package manager in Go for deploying static binaries on NextGen Firewalls.
 \end{itemize}
 \end{cvsubsection}
-\begin{cvsubsection}{Work Student}{TU Clausthal, Datacenter (Network Department)}{Apr 2017 --- Apr 2020}
+\begin{cvsubsection}{Work Student}{Clausthal University of Technology}{Apr 2014 --- Apr 2020}
 \bigskip
 \begin{itemize}
 \item Automated the TLS keypair deployment to a central firewall for inbound TLS inspection by writing a middleware in Python that pulls TLS keypairs and pushes them via REST-API to the firewall.
@@ -69,13 +71,10 @@
 a REST API as middleware between a proprietary service, Freeradius and OpenVPN
 \item Reduced toil of writing 2--25 mails daily via writing a software in Pythont that fetches IPS firewall alerts via REST API and mails them
 to responsible system administrators in institutes.
+\item Showed ownership by maintaining a Proxmox VE cluster consisting of 25 physical nodes.
+\item Wrote a software that helps finding unused or orphaned artifacts in the firewall and therefore reduced the manual task of searching for them
+\item Evaluated Kubernetes for increasing reliability and introducing micro segmentation via namespace segregation
 \end{itemize}
-\end{cvsubsection}
-\begin{cvsubsection}{Work Student}{TU Clausthal, Datacenter (Systems Department)}{Apr 2016 --- Apr 2020}
-\end{cvsubsection}
-\begin{cvsubsection}{Work Student}{TU Clausthal Inst.\@ of Software Systems Engineering}{Oct 2016 --- Sep 2017}
-\end{cvsubsection}
-\begin{cvsubsection}{Work Student}{TU Clausthal Inst.\@ of Mathematics}{Apr 2014 --- Sep 2017}
 \end{cvsubsection}
 \end{cvsection}
 
@@ -93,10 +92,11 @@ to responsible system administrators in institutes.
 \begin{cvsection}{Selected Projects}
 \begin{cvsubsection}{}{}{}
 \begin{itemize}
-	\item \textbf{Arch Linux} Working for Arch Linux as package maintainer and security team member since 2015
-	\item \textbf{Arch Linux Boxes} Building reliable infrastructure for automated monthly Vagrant and qcow2 image builds with Ansible and Hashicorp Packer. This project includes a small python script that reduces the toil of 1 hour per month to manually check for the monthly needed fresh Arch Linux ISO image.
-	\item \textbf{cifs-exporter} A SMB/CIFS Prometheus Exporter, that parses /proc/fs/cifs/Stats and exposes them via an HTTP
-server for Prometheus.
+\item \textbf{Arch Linux} Working for Arch Linux as package maintainer and security team member since 2015
+\item \textbf{Arch Linux Boxes} Automated monthly Vagrant and qcow2 image builds with Ansible and Hashicorp Packer. Reduced the toil of 1 hour per month to manually check for the monthly needed fresh Arch Linux ISO image via writing a Python script for monitoring the ISO image releases.
+\item \textbf{CIFS-exporter} A SMB/CIFS Prometheus Exporter, that parses \textit{/proc/fs/cifs/Stats} and exposes them via an HTTP server for Prometheus.
+\item \textbf{mnemonic} Diceware alike memorizeable password generator written in Go.
+\item \textbf{ansible-hcloud-inventory} A dynamic \textit{Ansible} inventory for the \textit{Hetzner Cloud}.
 \end{itemize}
 \end{cvsubsection}
 \end{cvsection}
