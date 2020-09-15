@@ -26,9 +26,6 @@
 % For mathematical symbols
 \usepackage{amsmath}
 \usepackage{hyperref}
-\usepackage{endnotes}
-\renewcommand{\notesname}{}
-\renewcommand{\enoteheading}{}
 
 % Set applicant's personal data for header
 \name{Christian Rebischke}
@@ -38,18 +35,21 @@
 \begin{document}
 
 % Print the header
-\makeheader
+\makeheader%
 
-\begin{cvsection}{Overview}
-\begin{cvsubsection}{}{}{}
+\begin{cvsection}{Education}
+\begin{cvsubsection}{M.Sc.\@ in Computer Science}{Clausthal University of Technology}{Oct 2018 --- Apr 2021}
+\bigskip
 \begin{itemize}
-\item \textbf{Natural Languages} German, English
-\item \textbf{Programming Languages} Bash, Python, Golang, C, C++, Java, x86 Assembly
-\item \textbf{Interests} Site-Reliability Engineering, Devops, Open Source, Systems Security.
+\item \textbf{Key Coursework}: Advanced computer networks, cloud computing, high performance computing, high performance computing with C++, network security
 \end{itemize}
 \end{cvsubsection}
-\end{cvsection}
-
+\begin{cvsubsection}{B.Sc.\@ in Computer Science}{Clausthal University of Technology}{Oct 2013 --- May 2019}
+\bigskip
+\begin{itemize}
+\item \textbf{Key Coursework}: Algorithms and data structures, computer architecture, computer networks, databases, operating systems and distributed systems, software engineering. GPA:\@ 2.6
+\end{itemize}
+\end{cvsubsection}
 
 % Print the content
 \begin{cvsection}{Employment}
@@ -59,21 +59,30 @@
 \item Developed a package manager for deploying static binaries in Golang for NextGen Firewalls.
 \end{itemize}
 \end{cvsubsection}
-\begin{cvsubsection}{Work Student}{TU Clausthal, Datacenter}{Apr 2016 --- Apr 2020}
-
+\begin{cvsubsection}{Work Student}{TU Clausthal, Datacenter (Network Department)}{Apr 2017 --- Apr 2020}
+\bigskip
 \begin{itemize}
-\item Wrote a software that helps finding unused or orphaned artifacts in the firewall and therefore reduced the manual task of searching for it.
+\item Wrote a software that helps finding unused or orphaned artifacts in firewalls..
 \item Built a proof of concept for deploying Virtual Tunnel End Points (VTEPs) with Ansible on Linux machines for EVPN BGP/VXLAN.
 \item Implemented an automated system in Python for fetching IPS firewall alerts via REST API and mailing them to responsible system administrators. This reduced the toil of writing 5--25 mails daily.
-\item Improved system security and reliability by setting up an OpenVAS vulnerability scanner.
 \item Reduced MTTR from one work day to one hour by automating a Freeradius/Radsecproxy based AAA infrastructure with Ansible.
-\item Showed ownership by maintaining a Proxmox VE cluster consisting of 25 physical nodes.
-\item Designed and implemented a command line tool in Python for deploying TLS certificates and private keys on a central firewall for inbound TLS inspection.
-\item Evaluated Kubernetes for increasing reliability and introducing micro segmentation via namespace segregation
+\item Designed and implemented a command line tool in Python for deploying TLS certificates and private keys on a central firewall for inbound TLS inspection. The production environment had 4000 students and 1000 employees.
+\item Evaluated Kubernetes for increasing reliability and introducing micro segmentation via namespace segregation.
 \item Set up a distributed monitoring system with the help of Traefik, Prometheus and Grafana for monitoring Service Level Indicators (SLIs) for different institutions within the university campus.
-\item Gave a talk about Freeradius and Radsecproxy deployment via Ansible on the DFN-BT (annual German research network meetup) \endnote{\url{https://www.dfn.de/fileadmin/3Beratung/Betriebstagungen/bt70/BT70_MobileIT_Konfiguration_FreeRADIUS_und_radsecproxy_mit_Ansible_Strauf_Rebischke.pdf}}
-\item Achieved a relation of LDAP users and IP addresses for writing user/IP specific firewall rules via implementing a REST API as middleware between a proprietary service, Freeradius and OpenVPN.
+\item Gave a talk about Freeradius and Radsecproxy deployment via Ansible on the DFN-BT (annual German research network meetup).
+\item Achieved a relation of LDAP users and IP addresses for writing user/IP specific firewall rules via implementing a REST API as middleware between a proprietary service, Freeradius and OpenVPN.\@
 \item Additional key technologies being used: NSCA, NRPE, SNMP, Nginx, Apache, NAPALM, NFSv4 over Kerberos, Elasticsearch, Logstash, Kibana, Ansible, Python-Flask, Docker, Git.
+\end{itemize}
+\end{cvsubsection}
+
+\begin{cvsubsection}{Work Student}{TU Clausthal, Datacenter (Systems Department)}{Apr 2016 --- Apr 2017}
+\bigskip
+\begin{itemize}
+\item Worked on a proof of concept for a distributed filesystem based on NFSv4 and Kerberos.
+\item Evaluated possibilities for the usage of OPSI for software deployment on Windows clients.
+\item Improved system security and reliability by setting up an OpenVAS vulnerability scanner for internal servers and housing.
+\item Showed ownership by maintaining a Proxmox VE cluster consisting of 25 physical nodes.
+\item Contributed to monitoring via setting up a status website based on Cachet and adding checks in the monitoring plattform Centreon with NRPE and SNMP requests.
 \end{itemize}
 \end{cvsubsection}
 
@@ -96,46 +105,31 @@
 \item Technologies being used: Bash, NFSv4 with Kerberos, Apache, CUPS, MySQL\@.
 \end{itemize}
 \end{cvsubsection}
-
 \end{cvsection}
 
-\begin{cvsection}{Education}
-\begin{cvsubsection}{M.Sc. Computer Science}{Technical University Clausthal}{Oct 2018 --- Apr 2021}
+\begin{cvsection}{Overview}
+\begin{cvsubsection}{}{}{}
 \begin{itemize}
-\item \textbf{Courses}: Automation Technology, Advanced Computer Networks, Cloud Computing, High-Performance Computing, High-Performance Computing with C++, Network Security, Wireless Sensor Network\ldots
-\end{itemize}
-\end{cvsubsection}
-\begin{cvsubsection}{B.Sc. Computer Science}{Technical University Clausthal}{Oct 2013 --- May 2019}
-\begin{itemize}
-\item \textbf{Courses}: Algorithms and Datastructures, Amazon AWS, Openstack, Business Informatics - Enterprise Information Systems, Business Informatics - Technologies and Applications, Combinatorial Optimization, Computer Architecture, Computer Networks, Databases, Digital Circuit Design, Embedded Systems Engineering, Human Computer Interaction, Linear Algebra, Logic and Verification, Mathematical Analysis, Numerical Analysis, Operating Systems and Distributed Systems, Software Engineering, Theoretical Computer Science\ldots
-\end{itemize}
-\end{cvsubsection}
-
-\end{cvsection}
-\begin{cvsection}{Open Source Contributions}
-\begin{cvsubsection}{Arch Linux}{\url{https://archlinux.org}}{Jan 2015 --- Now}
-\begin{itemize}
-\item \textbf{Security Advisories} Verifying known Common Vulnerabilities and Exposures (CVEs) in Arch Linux packages.
-\item \textbf{Hardening} Improving security of Arch Linux packages and infrastructure.
-\item \textbf{Package Maintaner} Building source code into Arch Linux binary packages for distribution, committing patches and supporting the community.
-\item \textbf{Release Engineering} Vagrant, qcow2 and Docker image builds for Arch Linux.
-\end{itemize}
-\end{cvsubsection}
-
-\begin{cvsubsection}{Projects}{\url{https://github.com/shibumi}}{}
-\begin{itemize}
-\item \textbf{Arch Linux Boxes} Building reliable infrastructure for automated monthly Vagrant and qcow2 image builds with Ansible and Hashicorp Packer. This project includes a small python script that reduces the toil of 1 hour per month to manually check for the monthly needed fresh Arch Linux ISO image. \endnote{\url{https://github.com/archlinux/arch-boxes}}.
-\item \textbf{ryoukai} My i3 statusbar written in Go.\endnote{\url{https://github.com/shibumi/ryoukai}}
-\item \textbf{ansible-hcloud-inventory} A dynamic Ansible inventory for the \textit{Hetzner Cloud}.\endnote{\url{https://github.com/shibumi/ansible-hcloud-inventory}}
-\item \textbf{cifs-exporter} A SMB/CIFS Prometheus Exporter, that parses \textit{/proc/fs/cifs/Stats} and exposes them via an HTTP server for Prometheus.\endnote{\url{https://github.com/shibumi/cifs-exporter}}
-\item \textbf{mnemonic} Diceware alike memorizeable password generator written in Go. \endnote{\url{https://github.com/shibumi/mnemonic}}
-\item \textbf{nspawn.org} A hub for systemd-nspawn container images and bootable GPT machine images available on \url{https://nspawn.org}
+\item \textbf{Natural Languages} German, English
+\item \textbf{Programming Languages} Go, Python, Bash
+\item \textbf{Interests} Site Reliability Engineering, Devops, Linux Security
+\item \textbf{Favourite Technologies} Hashicorp products (Terraform, Packer), Kubernetes, Ansible, Github Actions / Gitlab CI
 \end{itemize}
 \end{cvsubsection}
 \end{cvsection}
 
-\begin{cvsection}{Footnotes}
-\theendnotes
+\end{cvsection}
+\begin{cvsection}{Selected Projects}
+\begin{cvsubsection}{}{}{}
+\begin{itemize}
+\item \textbf{Arch Linux} Working on Arch Linux as package maintainer for cloud related packages (Hashicorp Vault, Packer, Kubermatic Kubeone, Kubectl, Fluxctl, etc) and security team member since 2015.
+\item \textbf{in-toto} Framework to secure the integrity of software supply chains.
+\item \textbf{CIFS-exporter} A SMB/CIFS Prometheus Exporter, that parses \textit{/proc/fs/cifs/Stats} and exposes them via an HTTP server for Prometheus.
+\item \textbf{mnemonic} Diceware alike memorizeable password generator written in Go.
+\item \textbf{ansible-hcloud-inventory} A dynamic \textit{Ansible} inventory for the \textit{Hetzner Cloud}.
+\item \textbf{Hikari} A unique ZSH configuration with some special key combinations
+\end{itemize}
+\end{cvsubsection}
 \end{cvsection}
 
 \end{document}
