@@ -29,8 +29,8 @@
 
 % Set applicant's personal data for header
 \name{Christian Rebischke}
-\address{Marie-Hedwig-Straße 13 \linebreak Apartment 321 \linebreak Clausthal-Zellerfeld 38678 \linebreak Germany}
-\contacts{+49 151 6190 2666 \linebreak chris@shibumi.dev \linebreak \url{https://shibumi.dev}}
+\address{}
+\contacts{chris@shibumi.dev \linebreak \url{https://shibumi.dev}}
 
 \begin{document}
 
@@ -38,7 +38,7 @@
 \makeheader%
 
 \begin{cvsection}{Education}
-\begin{cvsubsection}{M.Sc.\@ in Computer Science}{Clausthal University of Technology}{Oct 2018 --- Apr 2021}
+\begin{cvsubsection}{M.Sc.\@ in Computer Science}{Clausthal University of Technology}{Oct 2018 --- Oct 2021}
 \bigskip
 \begin{itemize}
 \item \textbf{Key Coursework}: Advanced computer networks, cloud computing, high performance computing, high performance computing with C++, network security
@@ -52,16 +52,26 @@
 \end{cvsubsection}
 
 \begin{cvsection}{Work Experience}
+\begin{cvsubsection}{Site Reliability Engineer}{avency}{Oct 2020 --- Now}
+\begin{itemize}
+\item Established a Post Mortem Culture and SRE principles while being the first SRE in the company.
+\item Microservice development in Go for various customer facing projects.
+\item Build a production-ready Kubernetes cluster on-premise with high-available customer facing deployments.
+\item Has been responsible for monitoring with Prometheus, Loki and Grafana.
+\item Developed Helm charts for in production Kubernetes clusters.
+\item Build CI/CD pipelines from scratch with Tekton on Kubernetes.
+\item Managed internal Terraform and Ansible repositories for deployments on-premise and in the cloud.
+\end{itemize}
+\end{cvsubsection}
 \begin{cvsubsection}{Google Summer of Code}{CNCF}{June 2020 --- Sep 2020}
 \begin{itemize}
 \item Ported \textit{runlib} functionality from the \textit{in-toto} reference implementation in Python to the \textit{in-toto} implementation in Go by expanding the library with code for signing and generating \textit{in-toto} link metadata.
 \end{itemize}
 \end{cvsubsection}
-\begin{cvsubsection}{Work Student}{Avency, Remote}{Apr 2020 --- Now}
+\begin{cvsubsection}{Work Student}{avency}{Apr 2020 --- Oct 2020}
 \begin{itemize}
-\item Maintained a Kubernetes Cluster in production.
 \item Developed a customer portal based on the static site generator Hugo that provides blocklists for Forcepoint Firewalls.
-\item Worked on a package manager for deploying static binaries on Forcepoint Firewalls.
+\item Worked on a package manager in Go for deploying static binaries on Forcepoint Firewalls.
 \end{itemize}
 \end{cvsubsection}
 \begin{cvsubsection}{Work Student}{Clausthal University of Technology}{Apr 2014 --- Apr 2020}
@@ -74,7 +84,6 @@ a REST API as middleware between a proprietary service, Freeradius and OpenVPN
 to responsible system administrators in institutes.
 \item Showed ownership by maintaining a Proxmox VE cluster consisting of 25 physical nodes.
 \item Wrote a software that helps finding unused or orphaned artifacts in firewalls.
-\item Evaluated Kubernetes for increasing reliability and introducing micro segmentation via namespace segregation
 \end{itemize}
 \end{cvsubsection}
 \end{cvsection}
@@ -84,7 +93,6 @@ to responsible system administrators in institutes.
 \begin{itemize}
 \item \textbf{Natural Languages} German, English
 \item \textbf{Programming Languages} Go, Python, Bash
-\item \textbf{Interests} Site Reliability Engineering, Devops, Linux, Security
 \end{itemize}
 \end{cvsubsection}
 \end{cvsection}
@@ -94,10 +102,7 @@ to responsible system administrators in institutes.
 \begin{cvsubsection}{}{}{}
 \begin{itemize}
 \item \textbf{Arch Linux} Working on Arch Linux as package maintainer and security team member since 2015
-\item \textbf{in-toto} Framework to secure the integrity of software supply chains.
-\item \textbf{CIFS-exporter} A SMB/CIFS Prometheus Exporter, that parses \textit{/proc/fs/cifs/Stats} and exposes them via an HTTP server for Prometheus.
-\item \textbf{mnemonic} Diceware alike memorizeable password generator written in Go.
-\item \textbf{ansible-hcloud-inventory} A dynamic \textit{Ansible} inventory for the \textit{Hetzner Cloud}.
+\item \textbf{in-toto-golang} Framework to secure the integrity of software supply chains.
 \end{itemize}
 \end{cvsubsection}
 \end{cvsection}
